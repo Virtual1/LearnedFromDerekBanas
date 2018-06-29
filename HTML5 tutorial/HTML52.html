@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>HTML5 Tutorial</title>
+</head>
+
+<body>
+	<!-- A div wrapper is often used to define the size and position of the page divs and spans should be used only for styling and not structural reasons -->
+	<div id="wrapper">
+
+	<!-- The header normally contains the logo, the main header, search form -->
+	<header>
+		
+		<a href="http://localhost/html5/html52.html">
+		<img id="websiteLogo" alt="New Think Tank Logo" src="http://localhost/html5/NTTLogo.gif"/>
+		</a>
+		
+		<h1>New Think Tank</h1>
+	
+	</header>
+
+	<nav id="horzNav">
+	
+		<p>
+			<a href="google.com">Google</a>
+			<a href="youtube.com">YouTube</a>
+			<a href="yahoo.com">Yahoo</a>
+		</p>
+	
+	</nav>
+	
+	<!-- main surrounds the main content of the document 
+	You can only have one main -->
+	<main id="content">
+	
+	<!-- We surround blocks of content in a document with section tags -->
+	<section>
+		<!-- Section elements should have a heading specific to it -->
+		<h2>Fun Fact</h2>
+		
+			<!-- An article is a self contained block of content that is complete on its own with a heading and content -->
+			<article>
+			
+				<h3>Tomato Fact</h3>
+				<p>Tomatoes are rich in lycopene, an antioxidant that is good for the heart and effective against certain cancers. Cooked tomatoes are actually better for you than raw ones, as more beneficial chemicals are released. Tomatoes are also packed with vitamins A and C, calcium, potassium.</p>
+				
+				<!-- Content in an aside should be stand alone content related to the article -->
+				<aside>I don't care what anybody says: Nothing is better than a tomato you grow. - Tom Vilsack</aside>
+			
+			</article>
+	
+	
+	</section>
+	
+	<section>
+
+		<h2>Fun Fact</h2>
+
+			<article>
+			
+				<h3>Types of Lists</h3>
+				
+					<!-- Unordered list -->
+					<ul id="uoListTypes">
+						<li>Unordered</li>
+						<li>Ordered</li>
+						<li>Definition</li>
+					</ul>
+					
+					<!-- Ordered list -->
+					<ol id="oListTypes">
+						<li>Harry Potter
+							<ol id="oListIndent">
+								<li>and the Sorcerer's Stone</li>
+								<li>and the Half-Blood Prince</li>
+								<li>and the Chamber of Secrets</li>
+								<li>Prisoner of Azkaban</li>
+								<li>and the Goblet of Fire</li>
+								<li>and the Order of the Phoenix</li>
+								<li>and the Deathly Hallows</li>
+							</ol>
+							
+							<!-- To use lists in lists put the new ol between the top li -->
+							</li>
+						<li>The Very Hungry Caterpillar</li>
+					</ol>
+					
+					<!-- Definition list : Surrounded by <dl>, list item surrounded by <dt>, <dfn> defines it is a word being defined and <dd> surrounds the definition -->
+					<dl>
+					<dt><dfn>Definition</dfn></dt>
+					<dd>the act of making definite, distinct, or clear</dd>
+					</dl>
+				
+				<aside>Mostly I make lists for projects. This can be daunting. Breaking something big into its constituent parts will help you organize your thoughts, but it can also force you to confront the depth of your ignorance and the hugeness of the task. That's OK. The project may be the lion, but the list is your whip. - Adam Savage</aside>
+			
+			</article>
+	
+	
+	</section>
+	
+	<section>
+
+		<h2>Fun Fact</h2>
+
+			<article>
+			
+				<h3>Tables</h3>
+				
+				<!-- Tables are surrounded with table tags -->
+				<table id="tableData">
+				
+				<!-- caption can be used to define a table title -->
+				<caption>Baseball</caption>
+				
+					<!-- thead shows at the top of the table and must come before tbody -->
+					<thead>
+						<tr>
+							<td colspan="4">Best Baseball Players</td>
+						</tr>
+					</thead>
+					
+					<!-- thead shows at the bottom of the table and must come before tbody -->
+					
+					<tfoot>
+						<!-- You can define how many rows are taken up with colspan and you can take up multiple rows with rowspan -->
+						<!-- tr defines the row and td each cell -->
+						<tr><td colspan="4">* Hall of Fame</td></tr>
+					</tfoot>
+					
+					<!-- The main data for the table goes between tbody if you use thead or tfoot -->
+					<tbody>
+						<tr>
+							<td></td>
+							<td>Average</td>
+							<td>RBIs</td>
+							<td>Homeruns</td>
+						</tr>
+						
+						<tr>
+							<td>Hank Aaron*</td>
+							<td>.305</td>
+							<td>2297</td>
+							<td>755</td>
+						</tr>
+						
+						<tr>
+							<td>Babe Ruth*</td>
+							<td>.342</td>
+							<td>2214</td>
+							<td>714</td>
+						</tr>
+						
+						<tr>
+							<td>Barry Bonds</td>
+							<td>.298</td>
+							<td>1996</td>
+							<td>762</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			
+			</article>
+	
+	
+	</section>
+	
+	</main>
+	
+	<footer>
+		<!-- address normally contains the authers contact info -->
+		<address>derekbanas@verizon.net</address>
+		<!-- copyright is normally placed in a small tag -->
+		<small>copyright 2014</small>
+	</footer>
+	
+	<!-- Vertical Menu
+	<nav id="vertNav">
+	
+		<p>
+			<a href="google.com">Google</a><br>
+			<a href="youtube.com">YouTube</a><br>
+			<a href="yahoo.com">Yahoo</a><br>
+		</p>
+	
+	</nav>
+	-->
+
+	</div>
+</body>
+
+</html>

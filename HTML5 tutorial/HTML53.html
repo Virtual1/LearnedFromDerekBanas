@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>HTML5 Tutorial</title>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<!-- To send data to the server you need to surround your input with form tags. 
+	The GET method embeds the data in the URL
+	The POST method enclodes the data and transmits it in the HTTP message -->
+	<form method="GET" action="phpscript.php">
+	
+		<!-- You can pass text where the name will be used as the key to get the passed value. You can mark as readonly and disabled -->
+		Your Name : <input type="text" name="name" size="50" maxlength="50"><br>
+		
+		<!-- You can have data hidden with password -->
+		Your Password : <input type="password" name="password"><br>
+		
+		<!-- A textarea is used for multiple lines of input. It can be marked as readonly="true" -->
+		Your History :<br>
+		<textarea name="history" rows="20" cols="50" >Just some random words
+		</textarea><br>
+		
+		<!-- You can visually surround like data with fieldset -->
+		<fieldset>
+		
+			<!-- Set the group name with legend -->
+			<legend>Hobbies</legend>
+			
+			<!-- Create a checkbox -->
+			Programming<input type="checkbox" name="cbprogramming" value="Programming">
+			Running<input type="checkbox" name="cbrunning" value="Running">
+		</fieldset>
+		
+		<fieldset>
+			<legend>Top Skill</legend>
+			
+			<!-- Create a radio button to allow only 1 option -->
+			Programming<input type="radio" name="skill" value="Programming" checked>
+			Running<input type="radio" name="skill" value="Running">
+		</fieldset>
+		
+		<!-- Put all the options between select. You could show all options with  size="3" and selected can define the default value-->
+		Favorite Number : 
+		<select name="favNum">
+		
+			<option value="PI">Pi (3.14…)</option>
+			<option value="EulersNum">Euler’s Number (2.718…)</option>
+			<option value="GoldenRatio" selected>Golden Ratio</option>
+		
+		</select><br>
+		
+		<!-- You can group options in a select with optgroup -->
+		Favorite Hero : 
+		<select name="favHero">
+  			<optgroup label="Marvel">
+    			<option value="spiderman">Spiderman</option>
+    			<option value="wolverine">Wolverine</option>
+  			</optgroup>
+  			<optgroup label="DC">
+    			<option value="flash">Flash</option>
+    			<option value="batman">Batman</option>
+  			</optgroup>
+		</select><br>
+		
+		<!-- You can submit hidden data such as ip address, browser, etc with hidden -->
+		<input type="hidden" name="browser" id="browser"><br>
+		
+		<!-- You can upload files as well, but you must use the POST method -->
+		<input type="file" name="Upload">
+		
+		<!-- You could use an image for submit and then catch the event with JavaScript -->
+		<input type="image" alt="Logo" src="http://localhost/html5/NTTLogo.gif">
+		
+		<!-- Reset deletes all entered data -->
+		<input type="reset" value="Reset">
+		
+		<!-- When submit is clicked the data is passed to be processed on the server -->
+		<input type="submit" name="submit" value="Submit">
+	
+	</form>
+
+</div>
+</body>
+
+</html>
